@@ -1,0 +1,30 @@
+{
+    "name": "com.my_company.my_application",
+    "version": "1.0",
+    "description": "Descrição da minha extensão.",
+    "permissions": [
+      "nativeMessaging",
+      "tabs",
+      "activeTab",
+      "scripting",
+      "http://*/", "https://*/"
+    ],
+    
+    "content_scripts": [
+        {
+          "matches": ["https://discord.com/channels/898224964296118272/898224964296118276"],
+          "js": [
+                "inject.js"
+          ]
+        }
+        ],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": ["inject.js"],
+      "persistent": false
+    },
+    "manifest_version": 2
+  }
+   

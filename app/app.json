@@ -1,0 +1,10 @@
+
+{
+  "name": "com.my_company.my_application",
+  "description": "Chrome Native Messaging API Example Host",
+  "path": "C:\\Users\\PEDRI\\Desktop\\exemplo\\app.bat",
+  "type": "stdio",
+  "allowed_origins": [
+    "chrome-extension://odcohnlnpjaejdnmcbdnjnammjcfiedi/"
+  ]
+}
